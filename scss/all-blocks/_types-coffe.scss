@@ -1,0 +1,155 @@
+.types__cofe .container__smal{
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    padding: 0;
+    background-image: url("../imgages/home.page/types.bgr.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.types__coffe__list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: center;
+}
+/* hamasiga alohida bgr img bermadim voxt tejaw , blan url yozib berip ketadi */
+.types__coffe__item{
+    display: block;
+    max-width: 255px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 330px;
+}
+.types__coffe__item::before{
+    background-image: url("../imgages/home.page/expreso.png");
+    background-size: 255px 193px;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 100px;
+    padding-top: 200px;
+    content: url("");
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    
+    .types__cofe .container__smal{
+        background-image: url("../imgages/home.page/types@2x.png");
+    }
+    .types__coffe__item::before{
+        background-image: url("../imgages/home.page/expreso@2x.png");
+    }
+} 
+@media only screen and (max-width: 1170px){
+    .types__cofe .container__smal{
+        
+        background-size: contain;
+    }
+}
+
+@media only screen and (max-width: 820px){
+    
+    .types__coffe__list{
+        flex-direction: column;
+    }    
+    
+    .types__coffe__item{
+        display: flex;
+        justify-content: center;
+        max-width: 573px;
+        margin: 0;
+        margin-top: 90px;       
+        padding: 0;
+        & + &{
+            margin-top: 32px;
+        }
+        
+    }
+    .types__coffe__item::before{
+        padding: 0;
+        padding: 100px ;
+        background-position: top;
+    }
+    
+    .types__coffe__box{
+        max-width: 282px;
+        width: 100%;
+        margin: 0;
+        margin-left: 36px;
+        padding-top: 30px;
+        padding-bottom: 52px;
+        
+    }
+    
+    .types__coffe_heading{
+        max-width: 255px;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 24px;
+        padding: 0;
+        text-align: start;
+    }
+    .types__coffe__paragraph{
+        margin: 0;
+        padding: 0;
+        text-align: start;
+    }
+    
+    
+}
+@media only screen and (max-width: 700px){
+    .types__coffe__item{
+        & + & {
+            margin-top: 32px;
+        }
+        margin-top: 90px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .types__coffe_heading{
+        text-align: center;
+        margin: 0;
+        margin-bottom: 16px;
+        padding: 0;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        
+    }
+    .types__coffe__paragraph{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .types__coffe__item::before{
+        padding: 100px;
+        background-position: top;
+    }
+}
+@media only screen and (max-width: 385px){
+  .types__coffe__box{
+      display: block;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+  }
+}
+.types__cofe .container__smal{
+ margin: 0 auto;
+ margin-bottom: 120px;
+}
