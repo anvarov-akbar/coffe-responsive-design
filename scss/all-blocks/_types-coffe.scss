@@ -142,14 +142,14 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 @media only screen and (max-width: 385px){
-  .types__coffe__box{
+    .types__cofe .container__smal{
+        margin: 0 auto;
+        margin-bottom: 120px;
+       }
+    .types__coffe__box{
       display: block;
     align-items: center;
     text-align: center;
-    margin-right: 20px;
+    margin: 0 ;
   }
-}
-.types__cofe .container__smal{
- margin: 0 auto;
- margin-bottom: 120px;
 }
